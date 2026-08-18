@@ -1,0 +1,17 @@
+# Bahmani Group Oman (BGO) Robots Exclusion File
+# Domain: https://bahmanigroupoman.org
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /sitemap.xml
+
+# Restrict Private Administrative Dashboards from Crawling & Indexing
+Disallow: /#admin
+Disallow: /#dashboard
+
+# Sitemap Location
+Sitemap: https://bahmanigroupoman.org/sitemap.xml

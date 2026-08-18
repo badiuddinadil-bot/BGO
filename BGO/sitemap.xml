@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Us Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#about</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- EXCOM Message / Founder Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#founder</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Core Services Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#services</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Verified Job Opportunities Portal -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#jobs</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Medical Aid & Assistance Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#medical</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Legal Aid Assistance Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#legal</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Emergency Document Transfer Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#transfer</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Community News & Circulars Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#news</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Media & Activity Gallery Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#gallery</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Membership Registration & Portal Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#membership</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Executive Leadership & Contact Page -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#contact</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#privacy</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <!-- Terms & Conditions -->
+    <url>
+        <loc>https://bahmanigroupoman.org/#terms</loc>
+        <lastmod>2026-08-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+</urlset>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahmani Group Oman (BGO) | Connecting Gulbarga People Across Oman</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Bahmani Group Oman (BGO) connects the Kalaburagi/Gulbarga community living in Sultanate of Oman. Providing verified job opportunities, medical assistance, emergency document transfers, legal aid guidance, and community welfare support.">
+    <meta name="keywords" content="BGO, Bahmani Group Oman, Gulbarga expat, Kalaburagi Oman, Oman non-profit, job board Oman, emergency document transfer, medical assistance, Muscat Gulbarga, Sohar expat community">
+    <meta name="author" content="Bahmani Group Oman">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://bahmanigroupoman.org/">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bahmani Group Oman (BGO)">
+    <meta property="og:url" content="https://bahmanigroupoman.org/">
+    <meta property="og:title" content="Bahmani Group Oman (BGO) | Connecting Gulbarga People Across Oman">
+    <meta property="og:description" content="Official community portal for Gulbarga / Kalaburagi residents in Oman. Emergency helpline, medical aid, verified job opportunities, and document transfer assistance.">
+    <meta property="og:image" content="https://bahmanigroupoman.org/assets/logo.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://bahmanigroupoman.org/">
+    <meta name="twitter:title" content="Bahmani Group Oman (BGO) | Connecting Gulbarga People">
+    <meta name="twitter:description" content="Official community portal for Gulbarga / Kalaburagi residents in Oman. Emergency helpline, medical aid, verified jobs, and document transfer assistance.">
+    <meta name="twitter:image" content="https://bahmanigroupoman.org/assets/logo.jpg">
+
+    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Bahmani Group Oman",
+      "alternateName": "BGO Oman",
+      "url": "https://bahmanigroupoman.org",
+      "logo": "https://bahmanigroupoman.org/assets/logo.jpg",
+      "description": "Non-profit community organization connecting Gulbarga / Kalaburagi residents in the Sultanate of Oman.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+968 9603 9848",
+        "contactType": "emergency support",
+        "email": "bahmanigroupoman@gmail.com",
+        "areaServed": "OM",
+        "availableLanguage": ["en", "ar", "ur", "kn"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Muscat",
+        "addressCountry": "OM"
+      }
+    }
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <div class="app-container"> 
+        <!-- Header -->
+        <header>
+            <div class="header-inner">
+                
+                <!-- Logo -->
+                <a href="#home" class="logo-container">
+                    <img src="assets/logo.jpg" alt="BGO Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1 data-i18n="org_name">Bahmani Group Oman</h1>
+                        <p data-i18n="tagline">Connecting Gulbarga People Across Oman</p>
+                    </div>
+                </a>
+
+                <!-- Navigation menu -->
+                <nav class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+                    <a href="#about" class="nav-link" data-i18n="nav_about">About Us</a>
+                    <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+                    <a href="#gallery" class="nav-link" data-i18n="nav_gallery">News & Events</a>
+                    <a href="#contact-page" class="nav-link" data-i18n="nav_contact">Contact</a>
+                    
+                    <!-- "More" Dropdown Container -->
+                    <div class="nav-dropdown" id="nav-dropdown-wrapper">
+                        <button type="button" class="nav-dropdown-btn" onclick="toggleNavDropdown(event)">
+                            <span>More</span> <span class="dropdown-arrow">▾</span>
+                        </button>
+                        <div class="nav-dropdown-content" id="nav-dropdown-content">
+                            <a href="#founder" class="dropdown-item" onclick="closeNavDropdown()" data-i18n="nav_founder">EXCOM Message</a>
+                            <a href="#jobs" class="dropdown-item" onclick="closeNavDropdown()" data-i18n="nav_jobs">Job Portal</a>
+                            <a href="#medical" class="dropdown-item" onclick="closeNavDropdown()" data-i18n="nav_medical">Medical Aid Assistance</a>
+                            <a href="#legal" class="dropdown-item" onclick="closeNavDropdown()">Legal Aid Assistance</a>
+                            <a href="#transfer" class="dropdown-item" onclick="closeNavDropdown()">Document Transfer</a>
+                            <a href="#news" class="dropdown-item" onclick="closeNavDropdown()" data-i18n="nav_news">News & Announcements</a>
+                            <a href="#privacy" class="dropdown-item" onclick="closeNavDropdown()">Privacy Policy</a>
+                            <a href="#terms" class="dropdown-item" onclick="closeNavDropdown()">Terms & Conditions</a>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Auth Links -->
+                    <a href="#dashboard" id="nav-dashboard-link" class="nav-link" style="display:none;" data-i18n="nav_dashboard">Dashboard</a>
+                    <a href="#admin" id="nav-admin-link" class="nav-link" style="display:none; color:var(--secondary-light);" data-i18n="nav_admin">Admin Panel</a>
+                </nav>
+
+                <!-- Actions (Language, Theme, Login button) -->
+                <div class="header-actions">
+                    
+                    <!-- Language Picker -->
+                    <select id="lang-selector" class="lang-selector lang-selector-header" onchange="setLanguage(this.value)">
+                        <option value="en">EN</option>
+                        <option value="ar">العربية</option>
+                        <option value="ur">اردو</option>
+                        <option value="kn">ಕನ್ನಡ</option>
+                    </select>
+                    
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleTheme()">🌙</button>
+                    
+                    <!-- Login Button Dynamic Container -->
+                    <div id="login-cta-container">
+                        <!-- Loaded dynamically via app.js -->
+                    </div>
+
+                    <!-- Hamburger button for mobile menu -->
+                    <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu">☰</button>
+
+        </header>
+
+        <!-- Main Content Root -->
+        <main id="app-root">
+            <!-- Dynamic pages injected here -->
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-inner">
+                
+                <div class="footer-col">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                        <img src="assets/logo.jpg" alt="BGO Logo" class="logo-img" style="height: 150px;">
+                        <h3 data-i18n="org_name" style="margin-bottom: 0;">Bahmani Group Oman</h3>
+                    </div>
+                    <p style="margin-top: 0.5rem;">Uniting and supporting the Gulbarga (Kalaburagi) diaspora living and working across the Sultanate of Oman since 2021.</p>
+                    <p class="footer-col-motto" data-i18n="motto">"By the community for the community."</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" class="footer-link" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#about" class="footer-link" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="#founder" class="footer-link" data-i18n="nav_founder">Founder Message</a></li>
+                        <li><a href="#services" class="footer-link" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#jobs" class="footer-link" data-i18n="nav_jobs">Job Portal</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-col">
+                    <h3></h3>
+                    <p style="margin-top: 1.5rem; color: var(--secondary-light); font-weight: 600;">Emergency support open 24/7</p>
+<p style="margin-top: 1.5rem; color: var(--secondary-light); font-weight: 600;">+968 9711 7360</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; gap: 1rem;">
+                    <p>&copy; 2026 Bahmani Group Oman (BGO). All Rights Reserved. | <a href="#privacy" style="color: var(--secondary-light); text-decoration: none; font-weight: 500;">Privacy Policy</a> | <a href="#terms" style="color: var(--secondary-light); text-decoration: none; font-weight: 500;">Terms & Conditions</a></p>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">Web Developer - <span style="color: white; font-weight: 600;">True Reach Digital</span></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- OTP Verification Modal -->
+    <div id="otp-verification-modal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 420px; text-align: center; padding: 2rem;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">📧</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">Secure Email OTP Verification</h3>
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1.5rem;">We have dispatched a secure verification code to your registered email address. Enter it below to complete authorization.</p>
+            <div id="otp-hint-alert" style="background-color: var(--warning-light); color: var(--warning-color); border: 1px solid #fde68a; padding: 0.6rem; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600; margin-bottom: 1.2rem;"></div>
+            
+            <div id="otp-error-msg" style="display: none; color: var(--danger-color); background-color: var(--danger-light); padding: 0.6rem; border-radius: var(--radius-sm); border: 1px solid #fca5a5; margin-bottom: 1.2rem; font-size: 0.85rem; font-weight: 600;"></div>
+            
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <input type="text" id="otp-input" placeholder="Enter 6-Digit Email OTP" maxlength="6" style="text-align: center; font-size: 1.5rem; letter-spacing: 0.5rem; font-weight: 700; padding: 0.8rem; border-radius: var(--radius-md); border: 2px solid var(--border-color); outline: none; width: 100%;">
+            </div>
+            
+            <div style="display: flex; gap: 1rem;">
+                <button onclick="BGO_PAGES.closeOtpModal()" class="btn btn-secondary" style="flex: 1; justify-content: center;">Cancel</button>
+                <button onclick="BGO_PAGES.verifyOTP()" class="btn btn-primary" style="flex: 1; justify-content: center;">Verify & Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Recovery (Forgot Password) Modal -->
+    <div id="account-recovery-modal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 450px; padding: 2rem;">
+            <div class="modal-header">
+                <h3>Recover Account Credentials</h3>
+                <button onclick="BGO_PAGES.closeForgotModal()" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body" style="padding-top: 1rem;">
+                <!-- Step 1: Input Email -->
+                <div id="recovery-step-1">
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.2rem;">Enter your registered email address (or username) to recover credentials.</p>
+                    <div id="recovery-err-1" style="display: none; color: var(--danger-color); background-color: var(--danger-light); padding: 0.6rem; border-radius: var(--radius-sm); border: 1px solid #fca5a5; margin-bottom: 1.2rem; font-size: 0.85rem; font-weight: 600;"></div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label>Registered Email Address *</label>
+                        <input type="email" id="recovery-email-input" placeholder="member@example.com" required style="width: 100%; padding: 0.8rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                    </div>
+                    <button onclick="BGO_PAGES.handleRecoveryStep1()" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Recovery Email OTP</button>
+                </div>
+                
+                <!-- Step 2: Input Email OTP -->
+                <div id="recovery-step-2" style="display: none; text-align: center;">
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.2rem;">Enter the 6-digit verification code sent to your registered email.</p>
+                    <div id="recovery-hint-alert" style="background-color: var(--warning-light); color: var(--warning-color); border: 1px solid #fde68a; padding: 0.6rem; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600; margin-bottom: 1.2rem;"></div>
+                    <div id="recovery-err-2" style="display: none; color: var(--danger-color); background-color: var(--danger-light); padding: 0.6rem; border-radius: var(--radius-sm); border: 1px solid #fca5a5; margin-bottom: 1.2rem; font-size: 0.85rem; font-weight: 600;"></div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <input type="text" id="recovery-otp-input" placeholder="Enter 6-Digit Email OTP" maxlength="6" style="text-align: center; font-size: 1.5rem; letter-spacing: 0.5rem; font-weight: 700; padding: 0.8rem; border-radius: var(--radius-md); border: 2px solid var(--border-color); outline: none; width: 100%;">
+                    </div>
+                    <button onclick="BGO_PAGES.handleRecoveryStep2()" class="btn btn-primary" style="width: 100%; justify-content: center;">Verify Email OTP</button>
+                </div>
+                
+                <!-- Step 3: Username Display & Password Reset -->
+                <div id="recovery-step-3" style="display: none;">
+                    <div style="background-color: var(--success-light); color: var(--success-color); border: 1px solid #a7f3d0; padding: 0.8rem; border-radius: var(--radius-sm); margin-bottom: 1.2rem; font-size: 0.9rem;">
+                        <strong>Verification Successful!</strong><br>
+                        Your Username is: <span id="recovery-username-display" style="font-weight: 700; font-family: monospace; font-size: 1.1rem; color: var(--primary-dark);"></span>
+                    </div>
+                    <div id="recovery-err-3" style="display: none; color: var(--danger-color); background-color: var(--danger-light); padding: 0.6rem; border-radius: var(--radius-sm); border: 1px solid #fca5a5; margin-bottom: 1.2rem; font-size: 0.85rem; font-weight: 600;"></div>
+                    <div class="form-group" style="margin-bottom: 1.2rem;">
+                        <label>Enter New Password</label>
+                        <div class="password-input-group">
+                            <input type="password" id="recovery-new-password" required style="width: 100%; padding: 0.8rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                            <button type="button" class="password-toggle-btn" id="recovery-new-password-toggle" onclick="BGO_PAGES.togglePasswordVisibility('recovery-new-password', this)" title="Show password" aria-label="Show password">👁️</button>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label>Confirm New Password</label>
+                        <div class="password-input-group">
+                            <input type="password" id="recovery-confirm-password" required style="width: 100%; padding: 0.8rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                            <button type="button" class="password-toggle-btn" id="recovery-confirm-password-toggle" onclick="BGO_PAGES.togglePasswordVisibility('recovery-confirm-password', this)" title="Show password" aria-label="Show password">👁️</button>
+                        </div>
+                    </div>
+                    <button onclick="BGO_PAGES.handleRecoveryStep3()" class="btn btn-primary" style="width: 100%; justify-content: center;">Reset Password & Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Detailed Member Profile View Modal -->
+    <div id="ad-member-view-modal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 750px;">
+            <div class="modal-header" style="background-color: var(--primary-color); color: white;">
+                <h3>Detailed Member Profile Details</h3>
+                <button onclick="BGO_PAGES.closeMemberViewModal()" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body" id="ad-member-view-body" style="padding: 2rem; max-height: 70vh; overflow-y: auto;">
+                <!-- Content injected dynamically via BGO_PAGES.adminOpenMemberView -->
+            </div>
+            <div class="modal-footer" style="padding: 1rem 2rem;">
+                <button onclick="BGO_PAGES.closeMemberViewModal()" class="btn btn-secondary">Close Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Member Event Attendance Polling Modal -->
+    <div id="event-poll-modal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 500px;">
+            <div class="modal-header" style="background-color: var(--primary-color); color: white;">
+                <h3 id="epoll-modal-title">📊 Event Attendance Poll</h3>
+                <button onclick="BGO_PAGES.closeEventPollModal()" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body" style="padding: 1.8rem;">
+                <div id="epoll-event-info" style="background:var(--bg-color); border:1px solid var(--border-color); padding:1rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+                    <!-- Event Title & Date info populated dynamically -->
+                </div>
+                
+                <form id="epoll-response-form" onsubmit="BGO_PAGES.handleSaveEventPollResponse(event)">
+                    <input type="hidden" id="epoll-event-id">
+                    
+                    <label style="display:block; font-weight:700; color:var(--primary-color); margin-bottom:0.8rem;">Select Your Attendance Response:</label>
+                    
+                    <div style="display:flex; flex-direction:column; gap:0.8rem; margin-bottom:1.5rem;">
+                        <label style="display:flex; align-items:center; gap:0.8rem; padding:0.8rem; border:1px solid var(--border-color); border-radius:var(--radius-sm); cursor:pointer; background:white;">
+                            <input type="radio" name="poll_status" value="alone" onchange="BGO_PAGES.togglePollFamilyInput(this.value)">
+                            <div>
+                                <strong style="color:var(--primary-dark);">🚶 Attending Alone</strong>
+                                <p style="font-size:0.75rem; color:var(--text-light); margin:0;">I will attend this community event by myself.</p>
+                            </div>
+                        </label>
+                        
+                        <label style="display:flex; align-items:center; gap:0.8rem; padding:0.8rem; border:1px solid var(--border-color); border-radius:var(--radius-sm); cursor:pointer; background:white;">
+                            <input type="radio" name="poll_status" value="family" onchange="BGO_PAGES.togglePollFamilyInput(this.value)">
+                            <div>
+                                <strong style="color:var(--primary-dark);">👨‍👩‍👧‍👦 Attending with Family</strong>
+                                <p style="font-size:0.75rem; color:var(--text-light); margin:0;">I will attend accompanied by family members.</p>
+                            </div>
+                        </label>
+                        
+                        <label style="display:flex; align-items:center; gap:0.8rem; padding:0.8rem; border:1px solid var(--border-color); border-radius:var(--radius-sm); cursor:pointer; background:white;">
+                            <input type="radio" name="poll_status" value="not_attending" onchange="BGO_PAGES.togglePollFamilyInput(this.value)">
+                            <div>
+                                <strong style="color:var(--danger-color);">❌ Not Attending</strong>
+                                <p style="font-size:0.75rem; color:var(--text-light); margin:0;">Unable to attend this scheduled event.</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Conditional Family Selection Group -->
+                    <div id="epoll-family-group" style="display:none; background:rgba(15,76,58,0.05); padding:1.2rem; border-radius:var(--radius-sm); margin-bottom:1.5rem; border:1px solid var(--border-color);">
+                        <label style="font-weight:700; font-size:0.9rem; color:var(--primary-color); display:block; margin-bottom:0.6rem;">
+                            👨‍👩‍👧‍👦 Select Registered Family Members Attending:
+                        </label>
+                        
+                        <div id="epoll-family-checkboxes-container" style="display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1rem;">
+                            <!-- Populated dynamically with Spouse & Child 1..5 checkboxes -->
+                        </div>
+
+                        <label style="font-weight:600; font-size:0.8rem; color:var(--text-color); display:block; margin-top:0.8rem;">
+                            Additional Family Members / Guests Attending (excluding above):
+                        </label>
+                        <input type="number" id="epoll-additional-family-count" min="0" max="20" placeholder="0" value="0" style="width:100%; margin-top:0.3rem; padding:0.5rem; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+                    </div>
+
+                    <button type="button" id="epoll-submit-btn" onclick="BGO_PAGES.handleSaveEventPollResponse(event)" class="btn btn-primary" style="width:100%; justify-content:center; cursor:pointer; font-weight:700; padding:0.75rem;">Submit / Update Poll Response</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Admin Edit & Approve Profile Request Modal -->
+    <div id="ad-edit-pur-modal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 600px;">
+            <div class="modal-header" style="background-color: var(--primary-color); color: white;">
+                <h3>✏️ Edit & Approve Profile Changes</h3>
+                <button onclick="BGO_PAGES.closeEditPurModal()" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body" style="padding: 1.8rem;">
+                <form id="ad-edit-pur-form" onsubmit="BGO_PAGES.handleSaveEditedPur(event)">
+                    <input type="hidden" id="ad-edit-pur-id">
+                    <div id="ad-edit-pur-fields-container" style="display:flex; flex-direction:column; gap:1rem;">
+                        <!-- Injected dynamically -->
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-top:1.5rem; justify-content:center;">Save Changes & Approve Profile Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Member Edit Profile Form Modal -->
+    <div id="db-edit-profile-modal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 780px;">
+            <div class="modal-header" style="background-color: var(--primary-color); color: white;">
+                <h3>✏️ Request Complete Profile Information Update</h3>
+                <button onclick="BGO_PAGES.closeMemberProfileEditModal()" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body" style="padding: 1.8rem; max-height: 78vh; overflow-y: auto;">
+                <div style="background:rgba(15,76,58,0.05); padding:0.8rem 1rem; border-radius:var(--radius-sm); border:1px solid var(--border-color); margin-bottom:1.5rem; font-size:0.82rem; color:var(--primary-dark);">
+                    ℹ️ <strong>Note:</strong> Any profile modifications (address changes, children additions, contact updates, profession) are recorded as <strong>Pending Approval</strong> and submitted for BGO Administrator verification.
+                </div>
+                
+                <form id="db-member-profile-edit-form" onsubmit="BGO_PAGES.handleMemberProfileUpdateSubmit(event)">
+                    
+                    <!-- 1. Personal & Family Information -->
+                    <div style="background:var(--bg-color); border:1px solid var(--border-color); padding:1rem 1.2rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+                        <h4 style="margin:0 0 1rem 0; color:var(--primary-color); font-size:0.95rem; font-weight:700; border-bottom:1px solid var(--border-color); padding-bottom:0.4rem;">
+                            1. Personal & Family Information
+                        </h4>
+                        
+                        <div class="form-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" id="mep-fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Father's Name</label>
+                                <input type="text" id="mep-fatherName">
+                            </div>
+                            <div class="form-group">
+                                <label>Blood Group *</label>
+                                <select id="mep-bloodGroup" required>
+                                    <option value="A+">A+</option><option value="A-">A-</option>
+                                    <option value="B+">B+</option><option value="B-">B-</option>
+                                    <option value="O+">O+</option><option value="O-">O-</option>
+                                    <option value="AB+">AB+</option><option value="AB-">AB-</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Marital Status *</label>
+                                <select id="mep-maritalStatus" required>
+                                    <option value="single">Single</option>
+                                    <option value="married">Married</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Spouse Name</label>
+                                <input type="text" id="mep-spouseName" placeholder="Spouse Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Oman Dependents Count</label>
+                                <input type="number" id="mep-dependentsCount" min="0" max="20" placeholder="0">
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Children Manager -->
+                        <div style="margin-top:1.2rem; border-top:1px dashed var(--border-color); padding-top:1rem;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem;">
+                                <label style="font-weight:700; font-size:0.85rem; color:var(--primary-dark);">Children Information (Add / Remove Children):</label>
+                                <button type="button" onclick="BGO_PAGES.addEditProfileChildRow()" class="action-btn-sm" style="background-color:var(--primary-color); color:white; font-size:0.75rem; padding:0.3rem 0.8rem; border-radius:var(--radius-sm); border:none; cursor:pointer;">
+                                    ➕ Add Child
+                                </button>
+                            </div>
+                            <div id="mep-children-container">
+                                <!-- Child rows injected dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Contact Details & Residence Address -->
+                    <div style="background:var(--bg-color); border:1px solid var(--border-color); padding:1rem 1.2rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+                        <h4 style="margin:0 0 1rem 0; color:var(--primary-color); font-size:0.95rem; font-weight:700; border-bottom:1px solid var(--border-color); padding-bottom:0.4rem;">
+                            2. Contact Details & Residence Address
+                        </h4>
+                        
+                        <div class="form-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" id="mep-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Oman Mobile Number *</label>
+                                <input type="text" id="mep-mobile" required placeholder="+968 91234567">
+                            </div>
+                            <div class="form-group">
+                                <label>WhatsApp Number *</label>
+                                <input type="text" id="mep-whatsapp" required placeholder="+968 91234567">
+                            </div>
+                            <div class="form-group">
+                                <label>Current City in Oman *</label>
+                                <input type="text" id="mep-city" required placeholder="e.g. Muscat, Sohar, Salalah">
+                            </div>
+                            <div class="form-group" style="grid-column: span 2;">
+                                <label>Native Place in Gulbarga / Kalaburagi *</label>
+                                <input type="text" id="mep-nativePlace" required placeholder="e.g. Shah Bazar, Gulbarga Town, Aland">
+                            </div>
+                            <div class="form-group" style="grid-column: span 2;">
+                                <label>Permanent Address in India (House, Street, City, State)</label>
+                                <input type="text" id="mep-indiaAddress" placeholder="e.g. H.No 4-123, Fort Road, Gulbarga 585101">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Employment & Work Address -->
+                    <div style="background:var(--bg-color); border:1px solid var(--border-color); padding:1rem 1.2rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+                        <h4 style="margin:0 0 1rem 0; color:var(--primary-color); font-size:0.95rem; font-weight:700; border-bottom:1px solid var(--border-color); padding-bottom:0.4rem;">
+                            3. Employment & Work Address
+                        </h4>
+                        
+                        <div class="form-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+                            <div class="form-group">
+                                <label>Profession / Job Title *</label>
+                                <input type="text" id="mep-profession" required placeholder="e.g. Accountant, Engineer, Supervisor">
+                            </div>
+                            <div class="form-group">
+                                <label>Company Name</label>
+                                <input type="text" id="mep-company" placeholder="e.g. Khimji Ramdas, Lulu Hypermarket">
+                            </div>
+                            <div class="form-group">
+                                <label>Oman Work City / Region</label>
+                                <input type="text" id="mep-workLocation" placeholder="e.g. Ruwi, Muscat">
+                            </div>
+                            <div class="form-group">
+                                <label>Oman Work Address</label>
+                                <input type="text" id="mep-companyAddress" placeholder="e.g. Building 45, Al Masa Street, Ruwi">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Emergency Contacts (Oman & India) -->
+                    <div style="background:var(--bg-color); border:1px solid var(--border-color); padding:1rem 1.2rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+                        <h4 style="margin:0 0 1rem 0; color:var(--primary-color); font-size:0.95rem; font-weight:700; border-bottom:1px solid var(--border-color); padding-bottom:0.4rem;">
+                            4. Emergency Contacts (Oman & India)
+                        </h4>
+                        
+                        <div class="form-grid" style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:0.8rem; margin-bottom:1rem;">
+                            <div style="grid-column: span 3; font-size:0.8rem; font-weight:700; color:var(--primary-dark);">Oman Emergency Contact:</div>
+                            <div class="form-group">
+                                <label>Contact Name</label>
+                                <input type="text" id="mep-emOman-name" placeholder="Name in Oman">
+                            </div>
+                            <div class="form-group">
+                                <label>Relationship</label>
+                                <input type="text" id="mep-emOman-rel" placeholder="e.g. Friend, Relative">
+                            </div>
+                            <div class="form-group">
+                                <label>Oman Mobile</label>
+                                <input type="text" id="mep-emOman-phone" placeholder="+968 91234567">
+                            </div>
+                        </div>
+
+                        <div class="form-grid" style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:0.8rem;">
+                            <div style="grid-column: span 3; font-size:0.8rem; font-weight:700; color:var(--primary-dark);">India Emergency Contact:</div>
+                            <div class="form-group">
+                                <label>Contact Name</label>
+                                <input type="text" id="mep-emIndia-name" placeholder="Name in India">
+                            </div>
+                            <div class="form-group">
+                                <label>Relationship</label>
+                                <input type="text" id="mep-emIndia-rel" placeholder="e.g. Father, Brother">
+                            </div>
+                            <div class="form-group">
+                                <label>India Mobile</label>
+                                <input type="text" id="mep-emIndia-phone" placeholder="+91 9876543210">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Volunteer Profile -->
+                    <div style="background:var(--bg-color); border:1px solid var(--border-color); padding:1rem 1.2rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+                        <h4 style="margin:0 0 1rem 0; color:var(--primary-color); font-size:0.95rem; font-weight:700; border-bottom:1px solid var(--border-color); padding-bottom:0.4rem;">
+                            5. BGO Volunteer Team Profile
+                        </h4>
+                        
+                        <div class="form-group" style="margin-bottom:0.8rem;">
+                            <label style="display:flex; align-items:center; gap:0.6rem; cursor:pointer; font-weight:700; color:var(--primary-dark);">
+                                <input type="checkbox" id="mep-volunteerInterest" style="width:18px; height:18px;">
+                                Register as BGO Community Volunteer
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Volunteer Skills & Expertise</label>
+                            <input type="text" id="mep-volunteerSkills" placeholder="e.g. Arabic Translation, Emergency Driving, First Aid, Sports Management">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-top:1rem; padding:0.8rem; font-size:1rem; justify-content:center;">
+                        📝 Submit Complete Profile Update Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    <!-- Floating Page Zoom Control Widget -->
+    <div id="zoom-control-widget" class="zoom-control-widget">
+        <button onclick="BGO_APP.zoomOut()" class="zoom-btn" title="Zoom Out (View More Content)">🔍 -</button>
+        <span id="zoom-level-badge" class="zoom-badge">100%</span>
+        <button onclick="BGO_APP.zoomIn()" class="zoom-btn" title="Zoom In">🔍 +</button>
+        <button onclick="BGO_APP.resetZoom()" class="zoom-btn reset-btn" title="Reset Zoom">🔄</button>
+    </div>
+
+    <!-- Scripts Loading -->
+    <script src="js/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/db_adapter.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/pages.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
